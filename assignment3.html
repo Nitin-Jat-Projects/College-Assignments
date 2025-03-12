@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<title>Assignment-03</title>
+<style>
+#nav{
+height :70px;
+width:100%;
+background-color:red;
+display : flex;
+justify-content : space-around;
+align-items : center;
+position : fixed;
+}
+
+#nav a{
+color : white;
+font-size : 2rem;
+text-decoration : none;
+border :2px solid transparent;
+}
+
+#nav a:hover{
+border : 5px solid black;
+}
+
+#hero{
+height : 600px;
+width : 100%;
+background-image : url("hero.jpg");
+background-color : green;
+background-size : cover;
+display : flex;
+justify-content : center;
+align-items : center;
+}
+#heroMsg
+{
+position : absolute;
+color : yellow;
+font-size: 5rem;
+}
+#heroMsg:hover{
+font-size : 8rem;
+color : blue;
+}
+
+#container{
+height :1000px;
+width :100%;
+display: flex;
+background-color : pink;
+}
+
+#container1{
+height :auto;
+width :50%;
+background-color : orange;
+border-right : 4px solid black;
+}
+#container2{
+height :auto;
+display : flex;
+justify-content : center;
+align-items : center;
+width :50%;
+border-left : 4px solid black;
+background-color : red; 
+}
+#container2 button{
+font-size : 5rem;
+}
+
+#container2 button:active{
+color : purple;
+background-color : green;
+font-size : 3rem; 
+}
+#container1 p{
+font-size : 2.5rem;
+font-weight : 900;
+}
+#container1 p:hover{
+color : brown;
+}
+
+#container1 h3{
+font-size : 3rem;
+}
+#container1 h3:hover{
+text-decoration : line-through;
+}
+
+#footer{
+background-color : #003049;
+height :400px;
+width : 100%;
+display : flex;
+justify-content : center;
+gap : 16px;
+}
+
+#footer img{
+  align-self: flex-end; 
+width : 70px;
+height : 70px;
+}
+#footer img:hover{
+opacity : 0.5;
+}
+
+#copyRight:hover{
+border : 8px solid red;
+}
+
+#myImage{
+width:400px;
+height:400px;
+background-color:white;
+border-radius:50%;
+background-image: url("iiii.png");
+
+background-size : cover;
+background-repeat: no-repeat;    
+background-position: center; 
+
+}
+
+</style>
+</head>
+<body>
+<div id='nav'>
+
+<a href="#myImage" style='text-decoration:italic;font-weight:900'>Nitin_Jat</a>
+<a href='#'>Home</a>
+<a href='#'>About</a>
+<a href='#'>Contact</a>
+<a href='#'>Help</a>
+</div>
+<div id='hero'>
+<p id='heroMsg'>Nature is god.</p> 
+</div>
+
+<div id='container'>
+<div id='container1'>
+<h3 style='text-align:center;color:white'>Importance of Nature</h3>
+<p>  Nature is a boundless source of wonder, beauty, and tranquility, offering a sanctuary for those seeking peace and inspiration. From the towering mountains that touch the sky to the quiet rustle of leaves in the wind, nature reminds us of the delicate balance of life and the interconnectedness of all living things. It is in nature’s simplicity that we find complexity, where every petal, every wave, and every gust of wind tells a story of growth, change, and resilience. The natural world provides not only sustenance and shelter but also a space for reflection, allowing us to reconnect with ourselves and the universe. As we witness the cycles of life unfold around us — from the blooming of flowers to the setting of the sun — we are reminded of the inherent beauty in both the grand and the minute. Nature is a timeless teacher, offering wisdom in silence and calm, urging us to slow down, to breathe, and to cherish the world we so often take for granted.</p>
+</div>
+<div id='container2'>
+
+
+<button id='bnt'>Click me!</button>
+</div>
+</div>
+
+<div id='footer'>
+
+<img src='whatsapp.png'>
+<img src='instagram.png'>
+<img src='twitter.png'>
+<img src='facebook.png'>
+<img src='linkdin.png'>
+
+</div>
+<div style='display:flex;align-items:space-between'>
+<div id='myImage'></div>
+<div style='font-size:70px;align-self:center;margin-left:30px'>Developed by Nitin Jat</div>
+</div>
+<div>
+<div id='copyRight' style='width:100%;height:60px;background-color:black;color:white;font-size:2rem;text-align:center'>&copy;copyRight to Nature.</div>
+</body>
+</html>
