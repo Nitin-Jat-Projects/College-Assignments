@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <form action='/abcd'>
 <input type='radio' id='Mr' name='salutation'>Mr.
 &nbsp;&nbsp;
@@ -34,3 +35,41 @@ Additional Information &nbsp;&nbsp;
 &nbsp;&nbsp;
 <button type='button' onclick='resetForm()'>reset</button>
 </form>
+=======
+<form action='/abcd'>
+<input type='radio' id='Mr' name='salutation'>Mr.
+&nbsp;&nbsp;
+<input type='radio' id='Mrs' name='salutation'>Mrs.
+&nbsp;&nbsp;
+<input type='radio' id='Ms' name='salutation'>Ms.
+<br>
+First Name &nbsp;&nbsp;<input type='text' id='firstName' name='firstName'><br>
+Last Name &nbsp;&nbsp;<input type='text' id='lastName' name='lastName'><br>
+Mail Address1 &nbsp;&nbsp;<input type='text' id='mailAddress1' name='mailAddress1'><br>
+Mail Address2 &nbsp;&nbsp;<input type='text' id='mailAddress2' name='mailAddress2'><br>
+City &nbsp;&nbsp;<input type='city' id='city' name='city'><br>
+State &nbsp;&nbsp;
+<select>
+<option id='1'>Gujarat</option>
+<option id='2'>Madhya Pradesh</option>
+<option id='3'>Punjab</option>
+</select>
+<br>
+Zip &nbsp;&nbsp;<input type='text' id='zip' name='zip'><br>
+Upload Photo &nbsp;&nbsp;<input type="file" id="fileUpload" name="fileUpload" accept="image/*"><br>
+Email&nbsp;&nbsp;<input type="email" id="email" name="email" required><br>
+Mobile <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" placeholder="+91" required>
+<br>
+Languages Known &nbsp;&nbsp;<br>
+<input type='checkbox' id='language' name='language-gujarati'>Gujarati<br>
+<input type='checkbox' id='language' name='language-hindi'>Hindi<br>
+<input type='checkbox' id='language' name='language-marathi'>Marathi<br>
+<input type='checkbox' id='language' name='language-french'>French<br>
+<br>
+Additional Information &nbsp;&nbsp;
+<br><textarea id="paragraph" name="paragraph" rows="4" cols="50" placeholder="Enter your paragraph here..." required></textarea><br>
+<button type='submit'>submit</button>
+&nbsp;&nbsp;
+<button type='button' onclick='resetForm()'>reset</button>
+</form>
+>>>>>>> 190753b0c7cc1192225b089ecf76f09f7c65e965
