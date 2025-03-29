@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <script>
+        // Function to calculate BMI
+        function calculateBMI() {
+            // Get values from input fields
+            var mass = parseFloat(document.getElementById("mass").value);
+            var height = parseFloat(document.getElementById("height").value);
+            
+            // Check if inputs are valid
+            if (isNaN(mass) || isNaN(height) || mass <= 0 || height <= 0) {
+                document.getElementById("result").innerHTML = "Please enter valid values for mass and height.";
+                return;
+            }
+
+            // BMI calculation
+            var bmi = mass / (height * height);
+            
+            // Display the result
+            document.getElementById("result").innerHTML = "Your BMI is: " + bmi.toFixed(2);
+        }
+    </script>
+</head>
+<body>
+    <h1>BMI Calculator</h1>
+    <div>
+        Mass(kg)
+        <input type="number" id="mass">
+    </div>
+    <div>
+        Height(m)
+        <input type="number" id="height" step="any">
+    </div>
+    <div>
+        <button onclick="calculateBMI()">Calculate BMI</button>
+    </div>
+    <div id="result"></div>
+</body>
+</html>

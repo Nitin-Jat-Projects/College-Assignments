@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        // Function for alert box
+        function showAlert() {
+            alert("This is an alert box!");
+        }
+
+        // Function for prompt box
+        function showPrompt() {
+            var userInput = prompt("Please enter your name:");
+            if (userInput !== null) {
+                alert("You entered: " + userInput);
+            }
+        }
+
+        // Function for confirmation box
+        function showConfirm() {
+            var isConfirmed = confirm("Are you sure you want to proceed?");
+            if (isConfirmed) {
+                alert("You clicked OK!");
+            } else {
+                alert("You clicked Cancel!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>JavaScript Button Interactions</h1>
+    <button onclick="showAlert()">Show Alert</button><br>
+    <button onclick="showPrompt()">Show Prompt</button><br>
+    <button onclick="showConfirm()">Show Confirm</button><br>
+</body>
+</html>

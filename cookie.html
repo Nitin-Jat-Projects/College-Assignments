@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<title>My Fourth Application</title>
+<script>
+function validateForm(frm)
+{
+var nn=frm.name.value.trim();
+if(nn.length==0)
+{
+alert("Name required");
+frm.name.focus();
+return false;
+}
+return true;
+}
+</script>
+</head>
+<body>
+<center>
+<form action='/assignment/xxx' onsubmit='return validateForm(this)'>
+Name
+<input type='text' id='name' name='name'><br>
+<button type'submit'>Next</button>
+</form>
+</center>
+</body>
+</html>

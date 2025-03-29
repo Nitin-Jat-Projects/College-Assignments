@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style> 
+.xyz:hover{
+color:red;
+}   
+</style>
+<script>
+function change()
+{
+var whatever=document.getElementById("whatever");
+whatever.classList.add("xyz");
+}
+</script>
+</head>
+<body>
+<div id='whatever'>This is too show dynamic addition of style using javascript</div>
+
+<button type='button' onclick='change()'>add Hover</button>
+
+</body>
+</html>
